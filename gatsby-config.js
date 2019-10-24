@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: ` Hacktoberfest DevC CasaBlanca `,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description:
+      " DevC CasaBlancaA Hacktoberfest :  repository to learn about open source code contributions flow ",
+    author: `DevC Casa`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
