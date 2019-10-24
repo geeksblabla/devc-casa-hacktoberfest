@@ -1,14 +1,31 @@
 import React from "react"
 
-const User = () => (
-  <div style={{ maxWidth: `300px`, margin: "auto", marginBottom: `1.45rem` }}>
-    <div style={{ position: "relative" }}>
-      <Avatar />
+const User = ({ firstName, lastName, github, bio, index }) => (
+  <div
+    style={{
+      width: "50%",
+      maxWidth: `300px`,
+      minWidth: "260px",
+      margin: "auto",
+      marginBottom: `1.45rem`,
+      marginTop: 0,
+    }}
+  >
+    <div
+      style={{
+        position: "relative",
+        maxWidth: `300px`,
+        minWidth: "260px",
+        margin: "auto",
+      }}
+    >
+      <Avatar github={github} index={index} />
       <p
         style={{
           background: "red",
           display: "inline",
           position: "absolute",
+          minWidth: 120,
           bottom: 0,
           left: "35%",
           fontSize: 20,
@@ -23,7 +40,7 @@ const User = () => (
           color: "#FFF",
         }}
       >
-        Youssouf <br /> EL Azizi
+        {firstName} <br /> {lastName}
       </p>
     </div>
     <p
@@ -31,15 +48,15 @@ const User = () => (
         fontSize: 14,
         textAlign: "center",
         color: "#FFF",
+        padding: "0px 20px",
       }}
     >
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore fugiat
-      provident fugit
+      {bio}
     </p>
   </div>
 )
 
-const Avatar = ({ url = "" }) => {
+const Avatar = ({ github, index }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +90,7 @@ const Avatar = ({ url = "" }) => {
       </mask>
       <g mask="url(#a)">
         <path
-          fill="url(#pattern0)"
+          fill={`url(#pattern${index})`}
           d="M63.875 73.453H404.22V418.46299999999997H63.875z"
         ></path>
         <path
@@ -127,19 +144,21 @@ const Avatar = ({ url = "" }) => {
           ></feBlend>
           <feGaussianBlur
             result="effect1_foregroundBlur"
-            stdDeviation="2.693"
+            stdDeviation="0"
           ></feGaussianBlur>
         </filter>
         <pattern
-          id="pattern0"
+          id={`pattern${index}`}
           width="1"
           height="1"
           patternContentUnits="objectBoundingBox"
         >
-          <use
+          <image
             transform="translate(-.01) scale(.00106)"
-            xlinkHref="#image0"
-          ></use>
+            width="960"
+            height="955"
+            xlinkHref={`https://github.com/${github}.png?size=${400 + index}`}
+          ></image>
         </pattern>
         <linearGradient
           id="paint0_linear"
@@ -152,12 +171,6 @@ const Avatar = ({ url = "" }) => {
           <stop stopColor="#FFDA2E"></stop>
           <stop offset="1" stopColor="#F0A"></stop>
         </linearGradient>
-        <image
-          id="image0"
-          width="960"
-          height="955"
-          xlinkHref="https://avatars0.githubusercontent.com/u/11137944?v=4"
-        ></image>
       </defs>
     </svg>
   )

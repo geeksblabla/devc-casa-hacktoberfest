@@ -10,6 +10,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import DevCLogo from "./devcLogo"
+
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -34,11 +36,37 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignContent: "center",
+            alignItems: "center",
+            margin: "auto",
+            color: "#FFF",
+            fontSize: 12,
+          }}
+        >
+          © {new Date().getFullYear()}, Built with 💚 by
+          <a
+            target="_blank"
+            href="https://www.facebook.com/groups/DevC.Casablanca/879221572479821/"
+          >
+            <div
+              style={{
+                width: "50vw",
+                maxWidth: "200px",
+                margin: "auto",
+                //marginBottom: `1.65rem`,
+                paddingTop: 5,
+                marginLeft: 5,
+              }}
+            >
+              <DevCLogo />
+            </div>
+          </a>
+        </div>
       </div>
     </>
   )
