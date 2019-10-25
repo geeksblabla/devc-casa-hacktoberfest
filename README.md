@@ -7,9 +7,9 @@ A repository to learn about open source code contributions flow
 
 # ❓ How to contribute
 
-- 🌟 this repository☝️😉.
-- Fork this repo, read [how to fork repo](https://help.github.com/articles/fork-a-repo/)
-- Clone the project to your local machine
+1. 🌟 Star this repository☝️😉.
+2. Fork this repo, read [how to fork repo](https://help.github.com/articles/fork-a-repo/)
+3. Clone the project to your local machine
 
 ```sh
 git clone https://github.com/this-is-you/devc-casa-hacktoberfest.git
@@ -17,15 +17,15 @@ git clone https://github.com/this-is-you/devc-casa-hacktoberfest.git
 #where this-is-you is your GitHub username
 ```
 
-- Create branch with your firstName and lastName, ex: `youssouf_elazizi`. **Never use the `master` branch to create PR**.
+4. Create branch with your firstName and lastName, ex: `youssouf_elazizi`. **Never use the `master` branch to create PR**.
 
 ```sh
   git checkout -b <branch-name>
 # <branch-name> : ex youssouf_elazizi
 ```
 
-- Add your first file `firstName_lastName.yml` (ex:`youssouf_elazizi.yml`) on the `contributors/` directory in that branch.
-- Add code with your infos, ex:
+5. Add your first file `firstName_lastName.yml` (ex:`youssouf_elazizi.yml`) on the `contributors/` directory in that branch.
+6. Add code with your infos, ex:
 
 ```yml
 firstName: Youssouf
@@ -34,14 +34,14 @@ bio: Full-stack web developer at Obytes
 github: yjose
 ```
 
-- Make sure you changes works as expected :
+7. Make sure you changes works as expected :
 
   - `npm install` or `yarn`
-  - `yarn start`
+  - `yarn start` or  `npm run start`
   - Your site is now running at `http://localhost:8000`!
   - Check the site and Make sure your name and profile avatar is on the list.
 
-- Commit changes and push
+8. Commit changes and push
 
 ```sh
 git add .
@@ -56,8 +56,8 @@ git push origin <branch-name>
 
 ```
 
-- Create Pull-Request to `master` branch in this repository, read [how creating PR](https://help.github.com/articles/creating-a-pull-request/)
-- Have fun and welcome to open source world.
+9. Create Pull-Request to `master` branch in this repository, read [how creating PR](https://help.github.com/articles/creating-a-pull-request/)
+10. Have fun and welcome to open source world.
 
 ## Credits
 
