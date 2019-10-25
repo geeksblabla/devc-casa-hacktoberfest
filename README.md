@@ -1,11 +1,11 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
+<div style='background-color:#21193c; padding:20px' align="center">
     <img alt="Hacktober" src="https://raw.githubusercontent.com/DevC-Casa/devc-casa-hacktoberfest/master/src/images/hacktober-logo.png" width="300" />
-</p>
+</div>
+<br>
+<p style='text-align:'>A repository to learn about open source code contributions flow<p/>
 
-A repository to learn about open source code contributions flow
-
-# ❓ How to contribute
+# 🔥 How to contribute 🔥
 
 1. 🌟 Star this repository☝️😉.
 2. Fork this repo, read [how to fork repo](https://help.github.com/articles/fork-a-repo/)
