@@ -44,7 +44,7 @@ github: yjose
 8. Commit changes and push
 
 ```sh
-git add .
+git add <path-to-the-yaml-file>
 
 #Now commit those changes using the git commit command:
 git commit -m "Add <your-name> to Contributors list"
