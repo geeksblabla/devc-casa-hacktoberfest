@@ -22,7 +22,6 @@ const User = ({ firstName, lastName, github, bio, index }) => (
       <Avatar github={github} index={index} />
       <p
         style={{
-          background: "red",
           display: "inline",
           position: "absolute",
           minWidth: 120,

@@ -38,7 +38,9 @@ const IndexPage = () => (
           textAlign: "center",
         }}
       >
-        🌟Contributors🌟
+        <span role="img" aria-label="Glowing Star">🌟</span>
+        Contributors
+        <span role="img" aria-label="Glowing Star">🌟</span>
       </h1>
     </div>
 
