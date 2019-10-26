@@ -11,38 +11,40 @@ const User = ({ firstName, lastName, github, bio, index }) => (
       marginTop: 0,
     }}
   >
-    <div
-      style={{
-        position: "relative",
-        maxWidth: `300px`,
-        minWidth: "260px",
-        margin: "auto",
-      }}
-    >
-      <Avatar github={github} index={index} />
-      <p
+    <a href={`https://github.com/${github}`} target="_blank">
+      <div
         style={{
-          background: "red",
-          display: "inline",
-          position: "absolute",
-          minWidth: 120,
-          bottom: 0,
-          left: "35%",
-          fontSize: 20,
-          fontWeight: "bold",
-          padding: "5px  10px",
-          background: `linear-gradient(123.32deg, #A31EC8 2.81%, #FF00AA 96.06%)`,
-          border: `2.63922px solid #FF04A8`,
-          boxSizing: "border-box",
-          boxShadow: `0px 131.961px 263.922px rgba(0, 0, 0, 0.2)`,
-          borderRadius: `7.18104px`,
-          transform: `rotate(-4deg)`,
-          color: "#FFF",
+          position: "relative",
+          maxWidth: `300px`,
+          minWidth: "260px",
+          margin: "auto",
         }}
       >
-        {firstName} <br /> {lastName}
-      </p>
-    </div>
+        <Avatar github={github} index={index} />
+        <p
+          style={{
+            background: "red",
+            display: "inline",
+            position: "absolute",
+            minWidth: 120,
+            bottom: 0,
+            left: "35%",
+            fontSize: 20,
+            fontWeight: "bold",
+            padding: "5px  10px",
+            background: `linear-gradient(123.32deg, #A31EC8 2.81%, #FF00AA 96.06%)`,
+            border: `2.63922px solid #FF04A8`,
+            boxSizing: "border-box",
+            boxShadow: `0px 131.961px 263.922px rgba(0, 0, 0, 0.2)`,
+            borderRadius: `7.18104px`,
+            transform: `rotate(-4deg)`,
+            color: "#FFF",
+          }}
+        >
+          {firstName} <br /> {lastName}
+        </p>
+      </div>
+    </a>
     <p
       style={{
         fontSize: 14,
