@@ -61,5 +61,5 @@ git push origin <branch-name>
 
 ## Credits
 
-https://github.com/firstcontributions/first-contributions
-https://github.com/mazipan/hello-open-source
+* https://github.com/firstcontributions/first-contributions
+* https://github.com/mazipan/hello-open-source
