@@ -45,8 +45,9 @@ const User = ({ firstName, lastName, github, bio, index }) => (
           {firstName} <br /> {lastName}
         </p>
       </div>
+     </Tilt>
     </a>
-    </Tilt>
+    
     <p
       style={{
         fontSize: 14,
