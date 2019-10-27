@@ -12,6 +12,7 @@ const User = ({ firstName, lastName, github, bio, index }) => (
       marginTop: 0,
     }}
   >
+    <a href={`https://github.com/${github}`} target="_blank">
     <Tilt className="Tilt" options={{ max : 25 }} >
       <div
         style={{
@@ -44,7 +45,9 @@ const User = ({ firstName, lastName, github, bio, index }) => (
           {firstName} <br /> {lastName}
         </p>
       </div>
-    </Tilt>
+     </Tilt>
+    </a>
+    
     <p
       style={{
         fontSize: 14,
