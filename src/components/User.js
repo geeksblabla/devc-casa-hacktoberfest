@@ -1,4 +1,5 @@
 import React from "react"
+import Tilt from 'react-tilt'
 
 const User = ({ firstName, lastName, github, bio, index }) => (
   <div
@@ -12,6 +13,7 @@ const User = ({ firstName, lastName, github, bio, index }) => (
     }}
   >
     <a href={`https://github.com/${github}`} target="_blank">
+    <Tilt className="Tilt" options={{ max : 25 }} >
       <div
         style={{
           position: "relative",
@@ -20,10 +22,9 @@ const User = ({ firstName, lastName, github, bio, index }) => (
           margin: "auto",
         }}
       >
-        <Avatar github={github} index={index} />
+          <Avatar  github={github} index={index} />
         <p
           style={{
-            background: "red",
             display: "inline",
             position: "absolute",
             minWidth: 120,
@@ -45,6 +46,7 @@ const User = ({ firstName, lastName, github, bio, index }) => (
         </p>
       </div>
     </a>
+    </Tilt>
     <p
       style={{
         fontSize: 14,

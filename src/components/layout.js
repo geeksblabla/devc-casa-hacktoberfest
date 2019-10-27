@@ -7,24 +7,12 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
 import DevCLogo from "./devcLogo"
 
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
       <div
@@ -51,6 +39,7 @@ const Layout = ({ children }) => {
           © {new Date().getFullYear()}, Built with 💚 by
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://www.facebook.com/groups/DevC.Casablanca/879221572479821/"
           >
             <div

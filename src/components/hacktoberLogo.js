@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import Tilt from 'react-tilt'
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -26,7 +27,12 @@ const Image = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <Tilt className="Tilt" options={{ max : 5 }} >
+      <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+    </Tilt>
+  )
+
 }
 
 export default Image

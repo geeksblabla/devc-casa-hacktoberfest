@@ -17,7 +17,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-tilt": "^0.1.4"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
