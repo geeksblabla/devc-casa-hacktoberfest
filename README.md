@@ -1,6 +1,11 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <div style='background-color:#21193c; padding:20px' align="center">
     <img alt="Hacktober" src="https://raw.githubusercontent.com/DevC-Casa/devc-casa-hacktoberfest/master/src/images/hacktober-logo.png" width="300" />
+
+![GitHub](https://img.shields.io/github/license/DevC-Casa/devc-casa-hacktoberfest)
+![GitHub](https://img.shields.io/github/forks/DevC-Casa/devc-casa-hacktoberfest)
+![GitHub](https://img.shields.io/github/contributors/DevC-Casa/devc-casa-hacktoberfest)
+
 </div>
 <br>
 <p style='text-align:'>A repository to learn about open source code contributions flow<p/>
